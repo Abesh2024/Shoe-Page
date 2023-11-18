@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: lightgrey;
+}
+
+img {
+    max-width: 450px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    transform:translate(70px, -50px);
+}
+
+img:hover {
+    max-width: 650px;
+}
+
+main {
+   width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    background: linear-gradient(to right, #B92B27, #156590);
+    box-shadow: 0px 0px 10px black;
+    transform: skewY(10deg);
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+}
+
+.background {
+    background: linear-gradient(to right, #8A2387, #E94057, #F27121);
+    box-shadow: 0px 0px 10px black;
+    padding: 2%;
+    margin: 5% 10%;
+    height: 70vh;
+    margin-top: 7%;
+    position: absolute;
+}
+
+p {
+    color: white;
+    max-width: 40%;
+}
+
+h1 {
+    font-size: xx-large;
+    margin-bottom: 30px;
+    color: white;
+}
